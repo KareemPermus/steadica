@@ -1,0 +1,31 @@
+.container {
+  padding: 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #292524;
+}
+.subtitle {
+  font-size: 0.875rem;
+  color: #78716c;
+  margin-top: 4px;
+}
+.loading, .error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  font-size: 0.875rem;
+  color: #78716c;
+}
+.error {
+  color: #dc2626;
+}

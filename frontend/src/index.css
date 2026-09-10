@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-brand-500: #10b981;
+  --color-brand-600: #059669;
+  --gradient-header-primary: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  --gradient-panel-dark: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  --gradient-soft-surface: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+}
+
+* {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 4px; }

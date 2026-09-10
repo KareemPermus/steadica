@@ -1,0 +1,47 @@
+.section { margin-bottom: 32px; }
+.heading {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #78716c;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+.list { display: flex; flex-direction: column; gap: 12px; }
+.empty { font-size: 0.875rem; color: #a8a29e; }
+.item {
+  background: #fff;
+  border: 1px solid #e7e5e4;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.toggle {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  border: 2px solid #d6d3d1;
+  background: transparent;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  color: transparent;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+.toggleDone {
+  border-color: #10b981;
+  background: #10b981;
+  color: #fff;
+}
+.icon {
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.info { flex: 1; min-width: 0; }
+.name { font-weight: 500; font-size: 0.875rem; color: #292524; }
+.freq { font-size: 0.75rem; color: #a8a29e; }
+.statusDone { font-size: 0.75rem; font-weight: 500; color: #059669; }
+.statusPending { font-size: 0.75rem; font-weight: 500; color: #a8a29e; }

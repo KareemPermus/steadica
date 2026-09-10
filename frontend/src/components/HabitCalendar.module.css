@@ -1,0 +1,21 @@
+.card {
+  background: #fff;
+  border: 1px solid #e7e5e4;
+  border-radius: 12px;
+  padding: 16px;
+}
+.monthLabel { font-weight: 600; font-size: 0.875rem; margin-bottom: 12px; }
+.weekdays { display: grid; grid-template-columns: repeat(7, 1fr); margin-bottom: 4px; }
+.wd { text-align: center; font-size: 0.688rem; color: #a8a29e; font-weight: 500; }
+.grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #57534e;
+}
+.today { outline: 2px solid #10b981; outline-offset: -2px; }
