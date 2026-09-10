@@ -1,0 +1,29 @@
+.container { max-width: 960px; margin: 0 auto; }
+.header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+.title { font-size: 1.5rem; font-weight: 700; color: #1c1917; letter-spacing: -0.02em; }
+.subtitle { font-size: 0.8rem; color: #78716c; margin-top: 4px; }
+.error { background: #fef2f2; color: #dc2626; padding: 10px 14px; border-radius: 10px; font-size: 0.8rem; margin-bottom: 16px; }
+.createRow { display: flex; gap: 10px; margin-bottom: 20px; }
+.input { flex: 1; border: 1px solid #d6d3d1; border-radius: 10px; padding: 8px 14px; font-size: 0.875rem; outline: none; }
+.input:focus { border-color: #10b981; box-shadow: 0 0 0 2px rgba(16,185,129,0.15); }
+.createBtn { display: flex; align-items: center; gap: 6px; background: #10b981; color: #fff; border: none; border-radius: 10px; padding: 8px 16px; font-size: 0.8rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.createBtn:hover { background: #059669; }
+.createBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+.card { background: #fff; border: 1px solid #e7e5e4; border-radius: 12px; overflow: hidden; }
+.toolbar { padding: 12px 16px; border-bottom: 1px solid #f5f5f4; }
+.searchWrap { position: relative; max-width: 280px; }
+.searchIcon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: #a8a29e; }
+.searchInput { width: 100%; border: 1px solid #d6d3d1; border-radius: 8px; padding: 7px 10px 7px 30px; font-size: 0.8rem; outline: none; }
+.searchInput:focus { border-color: #10b981; }
+.empty { padding: 48px 16px; text-align: center; color: #a8a29e; font-size: 0.85rem; }
+.tagGrid { display: flex; flex-wrap: wrap; gap: 10px; padding: 20px 16px; }
+.tagChip { display: flex; align-items: center; gap: 6px; background: #f5f5f4; border: 1px solid #e7e5e4; border-radius: 20px; padding: 6px 10px 6px 12px; font-size: 0.8rem; }
+.tagIcon { color: #10b981; flex-shrink: 0; }
+.tagName { font-weight: 500; color: #1c1917; }
+.deleteBtn { background: none; border: none; color: #a8a29e; cursor: pointer; padding: 2px; border-radius: 4px; display: flex; align-items: center; }
+.deleteBtn:hover { color: #dc2626; background: #fef2f2; }
+
+@media (max-width: 640px) {
+  .createRow { flex-direction: column; }
+  .searchWrap { max-width: 100%; }
+}

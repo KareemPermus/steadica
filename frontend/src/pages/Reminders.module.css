@@ -1,0 +1,53 @@
+.container { max-width: 860px; }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.title { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: var(--color-text-primary, #1c1917); }
+.subtitle { font-size: 0.813rem; color: var(--color-text-secondary, #78716c); margin-top: 2px; }
+.addBtn { display: flex; align-items: center; gap: 6px; background: #10b981; color: #fff; border: none; padding: 8px 16px; border-radius: 8px; font-size: 0.813rem; font-weight: 500; cursor: pointer; }
+.addBtn:hover { background: #059669; }
+.error { background: #fef2f2; color: #b91c1c; padding: 10px 14px; border-radius: 8px; font-size: 0.813rem; margin-bottom: 16px; }
+.loading { padding: 40px; text-align: center; color: #78716c; }
+.empty { text-align: center; padding: 60px 20px; color: #a8a29e; }
+.emptyIcon { margin: 0 auto 12px; opacity: 0.4; }
+.list { display: flex; flex-direction: column; gap: 10px; }
+.card { display: flex; align-items: center; justify-content: space-between; background: #fff; border: 1px solid #e7e5e4; border-radius: 12px; padding: 14px 18px; }
+.cardDisabled { opacity: 0.55; }
+.cardLeft { display: flex; align-items: center; gap: 12px; }
+.iconWrap { width: 36px; height: 36px; border-radius: 8px; background: #ecfdf5; color: #10b981; display: flex; align-items: center; justify-content: center; }
+.habitName { font-weight: 500; font-size: 0.875rem; }
+.meta { display: flex; gap: 10px; font-size: 0.75rem; color: #78716c; margin-top: 2px; }
+.time { font-weight: 500; }
+.cardRight { display: flex; align-items: center; gap: 10px; }
+.iconBtn { background: none; border: none; color: #a8a29e; cursor: pointer; padding: 4px; border-radius: 6px; display: flex; }
+.iconBtn:hover { color: #57534e; background: #f5f5f4; }
+.toggle { width: 38px; height: 22px; border-radius: 11px; border: none; cursor: pointer; position: relative; transition: background 0.2s; }
+.toggleOn { background: #10b981; }
+.toggleOff { background: #d6d3d1; }
+.toggleDot { position: absolute; top: 3px; width: 16px; height: 16px; border-radius: 50%; background: #fff; transition: left 0.2s; }
+.toggleOn .toggleDot { left: 19px; }
+.toggleOff .toggleDot { left: 3px; }
+
+/* Modal */
+.overlay { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.35); }
+.modal { background: #fff; border-radius: 16px; width: 400px; max-width: 95vw; padding: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
+.modalHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.modalHeader h3 { font-size: 1.1rem; font-weight: 600; }
+.closeBtn { background: none; border: none; color: #a8a29e; cursor: pointer; }
+.closeBtn:hover { color: #57534e; }
+.label { display: block; font-size: 0.813rem; font-weight: 500; margin: 12px 0 4px; }
+.select, .input { width: 100%; border: 1px solid #d6d3d1; border-radius: 8px; padding: 8px 12px; font-size: 0.813rem; outline: none; }
+.select:focus, .input:focus { border-color: #10b981; }
+.dayPicker { display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap; }
+.dayChip { padding: 5px 10px; border-radius: 6px; border: 1px solid #d6d3d1; background: #fff; font-size: 0.75rem; cursor: pointer; }
+.dayChip:hover { border-color: #10b981; }
+.dayChipActive { background: #10b981; color: #fff; border-color: #10b981; }
+.modalActions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 20px; }
+.cancelBtn { padding: 8px 16px; border-radius: 8px; border: 1px solid #d6d3d1; background: #fff; font-size: 0.813rem; cursor: pointer; }
+.saveBtn { padding: 8px 16px; border-radius: 8px; border: none; background: #10b981; color: #fff; font-size: 0.813rem; font-weight: 500; cursor: pointer; }
+.saveBtn:hover { background: #059669; }
+.saveBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+@media (max-width: 640px) {
+  .header { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .card { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .cardRight { align-self: flex-end; }
+}
